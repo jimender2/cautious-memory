@@ -25,4 +25,9 @@ public class GatewayHook extends AbstractGatewayModuleHook {
     public void shutdown() {
         logger.info("shutdown()");
     }
+
+    @Override
+    public boolean isFreeModule() {
+        return true;
+    }
 }

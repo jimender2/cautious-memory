@@ -15,22 +15,22 @@
         <dependency>
             <groupId>net.jimender2.ignition</groupId>
             <artifactId>pdf-client</artifactId>
-            <version>${project.version}</version>
+            <version>${revision}</version>
         </dependency>
         <dependency>
             <groupId>net.jimender2.ignition</groupId>
             <artifactId>pdf-common</artifactId>
-            <version>${project.version}</version>
+            <version>${revision}</version>
         </dependency>
         <dependency>
             <groupId>net.jimender2.ignition</groupId>
             <artifactId>pdf-designer</artifactId>
-            <version>${project.version}</version>
+            <version>${revision}</version>
         </dependency>
         <dependency>
             <groupId>net.jimender2.ignition</groupId>
             <artifactId>pdf-gateway</artifactId>
-            <version>${project.version}</version>
+            <version>${revision}</version>
         </dependency>
     </dependencies>
 
@@ -74,7 +74,7 @@
                     <moduleId>net.jimender2.ignition.pdf</moduleId>
                     <moduleName>${module-name}</moduleName>
                     <moduleDescription>${module-description}</moduleDescription>
-                    <moduleVersion>${project.parent.version}.${maven.build.timestamp}</moduleVersion>
+                    <moduleVersion>${project.parent.version}</moduleVersion>
                     <requiredIgnitionVersion>${ignition-platform-version}</requiredIgnitionVersion>
                     <licenseFile>license.html</licenseFile>
 

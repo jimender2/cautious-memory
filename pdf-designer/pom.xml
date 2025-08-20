@@ -15,7 +15,7 @@
         <dependency>
             <groupId>net.jimender2.ignition</groupId>
             <artifactId>pdf-common</artifactId>
-            <version>${project.version}</version>
+            <version>${revision}</version>
         </dependency>
         <dependency>
             <groupId>com.inductiveautomation.ignitionsdk</groupId>
