@@ -1,0 +1,21 @@
+services:
+  gateway:
+    build:
+      context: .
+      ## Specify the upstream version to derive from for the build argument in the Docker file.
+      args:
+        IGNITION_VERSION: 8.1.48
+    pull_policy: build
+    ports:
+      - 8088:8088
+    volumes:
+      - gateway-data:/usr/local/bin/ignition/data
+    environment:
+      ACCEPT_IGNITION_EULA: "Y"
+      GATEWAY_ADMIN_PASSWORD: password
+      IGNITION_EDITION: standard
+    command: >
+      -n Ignition-supp-66195
+
+volumes:
+  gateway-data:
