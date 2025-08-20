@@ -41,3 +41,7 @@ build/
 
 # Module Signer
 module-signer/
+
+cert.p7b
+keystore.jks
+make.sh
